@@ -34,6 +34,11 @@
 + {(Name, domain), (Name, domain), ...}
 + Order of tuples is not important, but respecting domains is 
 
+##### Relation schema
++ The tables is a matrix representation of a Relation
++ Degree = num. of attributes
++ Card
+
 
 
 
