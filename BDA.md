@@ -25,7 +25,7 @@
 2. `SELECT nombre FROM subject WHERE GP=4`
 3. `SELECT nombre FROM lecturer, teaching WHERE categoria='Titular' AND cod_asg='11545' AND teaching.cod_pro = lecturer.cod_pro`
 4. `SELECT lecturer.nombre FROM lecturer, teaching, subject WHERE cateogria='Titular' AND semester='1A' AND subject.cod_asg = teaching.cod_asg AND teaching.cod_pro = lecturer.cod_pro `
-
+5. `SELECT lecturer.nombre FROM lecturer, teaching, subject WHERE subject.GT = '2' AND subject.cod_asg = teaching.cod_asg AND teaching.cod_pro = lecturer.cod_pro`
   
 
 
