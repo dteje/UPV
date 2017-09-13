@@ -17,7 +17,9 @@
 
 ##### Queries using SQL
 
-FROM: can be +1 table: *FROM student, teaching*
++ FROM: can be +1 table: *FROM student, teaching*
++ Avoiding naming problems: *table.attribute*
+
 ###### Exercise
 1. `SELECT nombre FROM subjet`
 2. `SELECT nombre FROM subject WHERE GP=4`
