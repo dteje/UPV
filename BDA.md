@@ -26,7 +26,7 @@
 3. `SELECT nombre FROM Lecturer, Teaching WHERE Categoria='Titular' AND cod_asg='11545' AND Teaching.cod_pro = Lecturer.cod_pro`
 4. `SELECT Lecturer.nombre FROM Lecturer, Teaching, Subject WHERE cateogria='Titular' AND Semester='1A' AND Subject.cod_asg = Teaching.cod_asg AND Teaching.cod_pro = Lecturer.cod_pro `
 5. `SELECT Lecturer.nombre FROM Lecturer, Teaching, Subject WHERE Subject.GT = '2' AND Subject.cod_asg = Teaching.cod_asg AND Teaching.cod_pro = Lecturer.cod_pro`
-6. `SELECT nombre FROM Lecturer WHERE Categoria='Titular' AND telefono=''`
+6. `SELECT nombre FROM Lecturer WHERE Categoria='Titular' AND telefono IS NULL`
   
 
 
