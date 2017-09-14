@@ -10,5 +10,8 @@
 	  + Remove by negation by failure: what is not in the working memory, is false
 	+ working memory: representation of the elements of the situation
 	+ inference engine: the "reasoning" mechaninsm of the system
+
+#### 4. Facts in Clips
+ 	
 	
 
