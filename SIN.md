@@ -4,9 +4,11 @@
  + Declarative: list ingredients
  + Procedural: How to use them
 
-#### Rule based systems
+#### 2. Rule based systems
 + System composed of:
-	+ rule base: if-then (usually). formed by an antecedent (declarative knowledge) and a consequent (procedural)
-	+ working memory
-	+ inference engine
+	+ rule base: if-then (usually). formed by an antecedent (declarative knowledge) and a consequent (procedural [operations], not declarative). Operations:
+	  + Remove by negation by failure: what is not in the working memory, is false
+	+ working memory: representation of the elements of the situation
+	+ inference engine: the "reasoning" mechaninsm of the system
+	
 
