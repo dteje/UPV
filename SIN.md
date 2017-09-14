@@ -1,2 +1,2 @@
-# Unit 1. Representation in RBS
-
+# Block 1 - Knowledge representation and search
+## Unit 1. Rule-based sytems
