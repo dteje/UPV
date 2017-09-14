@@ -18,6 +18,8 @@
 ###### Exercise: Multi-field variables
 Pattern: `lista ?x $?y a ?x ?z`
 + f-0: Yes, matching the a with the 2nd one.
++ f-1: No
++ f-2: Yes, only sol: `a=?x. bba=$?y, a=a, c=?z` 
 
  	
 	
