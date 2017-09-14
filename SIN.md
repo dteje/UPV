@@ -11,7 +11,14 @@
 	+ working memory: representation of the elements of the situation
 	+ inference engine: the "reasoning" mechaninsm of the system
 
-#### 4. Facts in Clips
+#### 6. Facts in Clips
++ $?x is a variable of multiple elements (even 0)
++ Once a variable is set to a value it bounds to it (not even Empty)
+
+###### Exercise: Multi-field variables
+Pattern: `lista ?x $?y a ?x ?z`
++ f-0: Yes, matching the a with the 2nd one.
+
  	
 	
 
