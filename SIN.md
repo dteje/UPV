@@ -17,10 +17,16 @@
 
 ###### Exercise: Multi-field variables
 Pattern: `lista ?x $?y a ?x ?z`
-+ f-0: Yes, matching the a with the 2nd one.
++ fact-0: Yes, matching the a with the 2nd one.
 + f-1: No
 + f-2: Yes, only sol: `a=?x. bba=$?y, a=a, c=?z` 
 
+Pattern: `lista $?x a $?y`
++ f-0: 2 possibilites, depending on which `a` we pick
+
+Pattern: `lista $?x a ?z`
++ f-0: No
++ f-1: Yes, only 1 sol
  	
 	
 
