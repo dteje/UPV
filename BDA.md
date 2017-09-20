@@ -39,6 +39,11 @@
 + Degree = num. of attributes
 + Card
 
+###### Exercise 1.3  **ESTO CAE**
+1.  
+
+
+
 
 
 
