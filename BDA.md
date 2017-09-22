@@ -40,12 +40,15 @@
 + Card
 
 ### 1.3 Interpretation of a RD
-###### Questions diap. 21
+###### Questions River
 1. No
 2. Yes, that's why we have the Crosses table. 
 3. No we can't have same tuple *river-province*
-4. 
+4. Yes
 5. Max: 1, Min: 0
+
+###### Questions Library
+
 
 
 
