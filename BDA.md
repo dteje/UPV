@@ -48,7 +48,9 @@
 5. Max: 1, Min: 0
 
 ###### Questions Library
-
+2. No
+3. No, BOOK has only an attribute Author, but there is no AUTHOR table
+4. No, as Topic is a Foreign Key (max. 1)
 
 
 
