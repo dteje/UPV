@@ -56,7 +56,12 @@
 ###### Questions Cycle racing
 1. No
 4. No
-5. Yes, as no Unicless constrainct to Dorsal  
+5. Yes, as no Unicless constrainct to Dorsal 
+
+# Unit 2. SQL
+### 2.1 DML: Queries and Data Manipulation
+###### Example diap. 25 
+`SELECT etapa.netapa, puero.nompuerto FROM etapa, puerto WHERE etapa.dorsal = puerto.dorsal`
 
 
 
