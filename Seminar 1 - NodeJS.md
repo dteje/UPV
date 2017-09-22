@@ -49,7 +49,15 @@ NaN x 1 = NaN
 NaN x 2 = NaN
 ...
 
-c)
+c) allTables (undefined, undefined, undefined)
+
+d)  
+
+#### Activity 2
+
+#### Activity 3
+a) Line 25: `console.log(iterate(2,a3,myArray));` 
+
 
 
 
