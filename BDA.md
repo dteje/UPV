@@ -51,6 +51,10 @@
 2. No
 3. No, BOOK has only an attribute Author, but there is no AUTHOR table
 4. No, as Topic is a Foreign Key (max. 1)
+6. Yes
+
+###### Questions Cycle racing
+
 
 
 
