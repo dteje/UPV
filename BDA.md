@@ -39,8 +39,13 @@
 + Degree = num. of attributes
 + Card
 
-###### Exercise 1.3  **ESTO CAE**
-1.  
+### 1.3 Interpretation of a RD
+###### Questions diap. 21
+1. No
+2. Yes, that's why we have the Crosses table. 
+3. No we can't have same tuple *river-province*
+4. 
+5. Max: 1, Min: 0
 
 
 
