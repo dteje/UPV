@@ -27,6 +27,9 @@ Pattern: `lista $?x a $?y`
 Pattern: `lista $?x a ?z`
 + f-0: No
 + f-1: Yes, only 1 sol
+
+## Unit 2. Inference and control in RBS
+#### 1. Inference engine
  	
 	
 
