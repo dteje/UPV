@@ -34,7 +34,10 @@ CLIPS inference engine is based on a RETE algorithm
 + **Matching:** Rule matching generates an Agenda/Conflict Set with all the instances found.
 + If the Agenda is not empty
 	+ **Selection:** A rule instance is selected from the Conflict Set following a criterion
-	+ **Execution:** The RHS of the instance is executed 
+	+ **Execution:** The RHS of the instance is executed. It updates the Working Memory if necessary.
+
+#### 2. Conflict resolution strategies
+Cr
 
 
 # Glosario
