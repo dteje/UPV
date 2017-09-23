@@ -30,6 +30,21 @@ Pattern: `lista $?x a ?z`
 
 ## Unit 2. Inference and control in RBS
 #### 1. Inference engine
+CLIPS inference engine is based on a RETE algorithm
++ **Matching:** Rule matching generates an Agenda/Conflict Set with all the instances found.
++ If the Agenda is not empty
+	+ **Selection:** A rule instance is selected from the Conflict Set following a criterion
+	+ **Execution:** The RHS of the instance is executed 
+
+
+# Glosario
++ Antecedent: premise or condition that must hold for the rule to be applicated
++ Consequent: Conclusion or action executed over the current state 
++ LHS: Left-Hand side of the rule. Antecedent
++ RBS: Rule-based systems. Systems composed of rule base, working memory and inference engine
++ RHS: Right-Hand side of the rule. Consequent
+
+
  	
 	
 
