@@ -63,6 +63,9 @@
 ###### Example diap. 25 
 `SELECT etapa.netapa, puero.nompuerto FROM etapa, puerto WHERE etapa.dorsal = puerto.dorsal`
 
+###### Example diap.27
+`SELECT C.nombre, E.netapa FROM Etapa E, Ciclista C WHERE E.km>150 AND E.dorsal = C.dorsal`
+
 
 
 
