@@ -44,8 +44,11 @@ FIFO - More priority to older facts and rules
 ##### Random
 ##### Specificity
 More priority to those with more details or constraints
-#### 3. Examples
-##### Example 2
+#### 5. Exercises
+###### Exercise 5
+``
+
+
 
 
 
