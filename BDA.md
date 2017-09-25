@@ -65,20 +65,37 @@
 `SELECT etapa.netapa, puero.nompuerto FROM etapa, puerto WHERE etapa.dorsal = puerto.dorsal`
 
 ###### Example s. 27
-`SELECT C.nombre, E.netapa FROM Etapa E, Ciclista C WHERE E.km>150 AND E.dorsal = C.dorsal`
+``` sql
+SELECT C.nombre, E.netapa 
+FROM Etapa E, Ciclista C 
+WHERE E.km>150 AND E.dorsal = C.dorsal```
 
 ###### Example s. 28
-`SELECT C2.nombre
+```sql
+SELECT C2.nombre
 FROM  Ciclista C1, Ciclista C2
 WHERE C1.nombre = 'Miguel Induráin'
 AND C1.nomeq = C2.nomeq
-AND C2.edad < C1.edad`
+AND C2.edad < C1.edad
+```
 
 #### 2. Subqueries
-`SELECT * FROM C1 WHERE (subquery)`
+```SQL 
+SELECT * FROM C1 WHERE (subquery)
+```
 #### 3. Comparison
 ###### Example s. 36
-`SELECT P1.nompuerto FROM Puerto P1 WHERE P1.altura > (SELECT AVG(P.altura) FROM Puerto P WHERE P.Categoria='2')`
+``` SQL
+SELECT P1.nompuerto 
+FROM Puerto P1 
+WHERE P1.altura > (SELECT AVG(P.altura) FROM Puerto P WHERE P.Categoria='2')
+```
+###### Example s. 41
+``` SQL
+SELECT 
+FROM
+WHERE 
+```
 
 
 
