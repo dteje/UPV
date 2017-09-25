@@ -94,11 +94,23 @@ WHERE P1.altura > (SELECT AVG(P.altura) FROM Puerto P WHERE P.Categoria='2')
 ```
 ###### Example s. 41
 ``` SQL
-SELECT 
-FROM
-WHERE 
-```
+SELECT E.salida, E.llegada
+FROM Etapa E
+WHERE E.netapa IN 
+	(SELECT P2.netapa FROM Puerto P2 WHERE P2.pendiente = 
+		(SELECT MAX(Pendiente) FROM Puerto P));
 
+/*Se puede cambiar IN por = SOLO si estamos seguros de que solo hay una conicidencia*/
+```
+*Other solution*
+
+```SQL
+SELECT DISTINCT E.salida, E.llegada
+FROM Etapa E, Puerto P
+WHERE E.netapa = P.netapa
+AND pendiente = 
+	(SELECT MAX(pendiente) FROM Puerto)
+```
 
 
 
