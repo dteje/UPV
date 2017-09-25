@@ -60,11 +60,19 @@
 
 # Unit 2. SQL
 ### 2.1 DML: Queries and Data Manipulation
-###### Example diap. 25 
+###### Example s. 25 
 `SELECT etapa.netapa, puero.nompuerto FROM etapa, puerto WHERE etapa.dorsal = puerto.dorsal`
 
-###### Example diap.27
+###### Example s. 27
 `SELECT C.nombre, E.netapa FROM Etapa E, Ciclista C WHERE E.km>150 AND E.dorsal = C.dorsal`
+
+###### Example s. 28
+`SELECT C2.nombre
+FROM  Ciclista C1, Ciclista C2
+WHERE C1.nombre = 'Miguel Induráin'
+AND C1.nomeq = C2.nomeq
+AND C2.edad < C1.edad`
+
 
 
 
