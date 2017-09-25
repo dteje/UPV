@@ -37,7 +37,16 @@ CLIPS inference engine is based on a RETE algorithm
 	+ **Execution:** The RHS of the instance is executed. It updates the Working Memory if necessary.
 
 #### 2. Conflict resolution strategies
-Cr
+##### Depth 
+LIFO - More priority to most recent facts and rules
+##### Breadth
+FIFO - More priority to older facts and rules
+##### Random
+##### Specificity
+More priority to those with more details or constraints
+#### 3. Examples
+##### Example 2
+
 
 
 # Glosario
