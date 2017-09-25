@@ -11,9 +11,9 @@
 
 
 ##### Queries with relational algebra
-###### Exercise
-
-5 - `(((Teaching[cod_pro, cod_asg] x Subject) WHERE GT=2) [cod_pro] x Lecturer))[nombre]`
+###### Exercise 
+```SQL
+5. (((Teaching[cod_pro, cod_asg] x Subject) WHERE GT=2) [cod_pro] x Lecturer))[nombre]```
 
 ##### Queries using SQL
 
@@ -21,12 +21,13 @@
 + Avoiding naming problems: *table.attribute*
 
 ###### Exercise
-1. `SELECT nombre FROM Subjet`
-2. `SELECT nombre FROM Subject WHERE GP=4`
-3. `SELECT nombre FROM Lecturer, Teaching WHERE Categoria='Titular' AND cod_asg='11545' AND Teaching.cod_pro = Lecturer.cod_pro`
-4. `SELECT Lecturer.nombre FROM Lecturer, Teaching, Subject WHERE cateogria='Titular' AND Semester='1A' AND Subject.cod_asg = Teaching.cod_asg AND Teaching.cod_pro = Lecturer.cod_pro `
-5. `SELECT Lecturer.nombre FROM Lecturer, Teaching, Subject WHERE Subject.GT = '2' AND Subject.cod_asg = Teaching.cod_asg AND Teaching.cod_pro = Lecturer.cod_pro`
-6. `SELECT nombre FROM Lecturer WHERE Categoria='Titular' AND telefono IS NULL`
+```SQL 
+1. SELECT nombre FROM Subjet;
+2. SELECT nombre FROM Subject WHERE GP=4;
+3. SELECT nombre FROM Lecturer, Teaching WHERE Categoria='Titular' AND cod_asg='11545' AND Teaching.cod_pro = Lecturer.cod_pro;
+4. SELECT Lecturer.nombre FROM Lecturer, Teaching, Subject WHERE cateogria='Titular' AND Semester='1A' AND Subject.cod_asg = Teaching.cod_asg AND Teaching.cod_pro = Lecturer.cod_pro ;
+5. SELECT Lecturer.nombre FROM Lecturer, Teaching, Subject WHERE Subject.GT = '2' AND Subject.cod_asg = Teaching.cod_asg AND Teaching.cod_pro = Lecturer.cod_pro;
+6. SELECT nombre FROM Lecturer WHERE Categoria='Titular' AND telefono IS NULL; ```
 
 
 ##### Tuple schema
@@ -62,13 +63,14 @@
 ### 2.1 DML: Queries and Data Manipulation
 #### 1. Simple queries 
 ###### Example s. 25 
-`SELECT etapa.netapa, puero.nompuerto FROM etapa, puerto WHERE etapa.dorsal = puerto.dorsal`
+```SQL
+SELECT etapa.netapa, puero.nompuerto FROM etapa, puerto WHERE etapa.dorsal = puerto.dorsal;```
 
 ###### Example s. 27
-``` sql
+```sql
 SELECT C.nombre, E.netapa 
 FROM Etapa E, Ciclista C 
-WHERE E.km>150 AND E.dorsal = C.dorsal```
+WHERE E.km>150 AND E.dorsal = C.dorsal;```
 
 ###### Example s. 28
 ```sql
