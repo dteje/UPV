@@ -109,7 +109,7 @@ SELECT DISTINCT E.salida, E.llegada
 FROM Etapa E, Puerto P
 WHERE E.netapa = P.netapa
 AND pendiente = 
-	(SELECT MAX(pendiente) FROM Puerto)
+	(SELECT MAX(pendiente) FROM Puerto);
 ```
 
 
