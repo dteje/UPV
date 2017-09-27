@@ -1,20 +1,33 @@
 + Road
-	+ Number
-	+ Length
-	+ Type (HW, N)
-	+ Sequence of KM points that have
-		+ km value
-		+ latitude
-		+ longitude
+  - Number
+  - Length
+  - Type (HW, N)
+    - Limit
+    - Code
+  - Sequence of KM points that have
+    - km value
+    - latitude
+    - longitude
 
 
-+ Incident
-	+ Numerical code
-	+ Starting instance
-	+ Ending instance
-	+ Between 2 km point
-	+ Level of dangerous (1-5)
-	+ Type of incident
-	+ Number of vehicles solving
-		+ Plate 
-		
+- Incident
+  - Starting instant
+  - Ending instant
+  - Between 2 km point
+  - Level of dangerous (1-5)
+  - Type of incident
+    - Numerical code
+    - Description
+  - Coordinator (person)
+    - ID
+    - name
+    - phone number
+  - Number of vehicles solving
+    - Plate number
+    - Power
+    - KM point location (update real time)
+    - Drivers
+    - Shift
+      - Starting instant
+      - Ending instant
+      - Number of km travelled
