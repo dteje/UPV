@@ -1,16 +1,16 @@
 # Unit 1. Relational Databases
-### 1.2 Relational Data Model
+### Relational Data Model
 + **Entities** = tables
 + **Instances** = rows
 + **Attributes** = columns (must have same domain)
 
 + Applications can, with queries:
-	+ Insert
-	+ Delete
-	+ Update
+  + Insert
+  + Delete
+  + Update
 
 
-##### Queries with relational algebra
+#### 1. Simple queries
 ###### Exercise 
 ```SQL
 5. (((Teaching[cod_pro, cod_asg] x Subject) WHERE GT=2) [cod_pro] x Lecturer))[nombre]```
@@ -21,7 +21,7 @@
 + Avoiding naming problems: *table.attribute*
 
 ###### Exercise
-```SQL 
+​```SQL 
 1. SELECT nombre FROM Subjet;
 2. SELECT nombre FROM Subject WHERE GP=4;
 3. SELECT nombre FROM Lecturer, Teaching WHERE Categoria='Titular' AND cod_asg='11545' AND Teaching.cod_pro = Lecturer.cod_pro;
@@ -63,17 +63,17 @@
 ### 2.1 DML: Queries and Data Manipulation
 #### 1. Simple queries 
 ###### Example s. 25 
-```SQL
+​```SQL
 SELECT etapa.netapa, puero.nompuerto FROM etapa, puerto WHERE etapa.dorsal = puerto.dorsal;```
 
 ###### Example s. 27
-```sql
+​```sql
 SELECT C.nombre, E.netapa 
 FROM Etapa E, Ciclista C 
 WHERE E.km>150 AND E.dorsal = C.dorsal;```
 
 ###### Example s. 28
-```sql
+​```sql
 SELECT C2.nombre
 FROM  Ciclista C1, Ciclista C2
 WHERE C1.nombre = 'Miguel Induráin'
@@ -112,12 +112,38 @@ AND pendiente =
 	(SELECT MAX(pendiente) FROM Puerto);
 ```
 
+###### Example s. 43
+
+```sql
+SELECT E.director
+FROM EQUIPO E, CICLISTA C
+WHERE C.nombre In (SELECT C1.nombre FROM CICLISTA C1 WHERE C1.nombre LIKE `A%`);
+```
+
+###### Example s. 44
+
+```sql
+SELECT ET.netapa
+FROM ETAPA ET
+WHERE ET.dorsal IN 	(SELECT C.dorsal
+                   	FROM CICLISTA C
+                    WHERE C.nomeq IN	(SELECT EQ.nomeq
+                            			FROM EQUIPO EQ
+                            			WHERE E.director LIKE 'A%');
+                    )
+```
+
+ ###### Example s.48
+
+```sql
+SELECT nombre
+FROM CICLISTA 
+WHERE dorsal NOT IN 	(SELECT dorsal 
+                         FROM etapa);
+```
+
+#### 4. Universal quantification 
 
 
-
-
-
-
- 
 
 
