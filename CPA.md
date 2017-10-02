@@ -12,7 +12,7 @@
   + in the Internet (fua, la ingeniería)
 
 ## Parallel computing models
-##### 	Flynn's Taxonomy
+##### Flynn's Taxonomy
 
 | Instruction \ Data       | Single Data                | Multiple Data                            |
 | ------------------------ | -------------------------- | ---------------------------------------- |
@@ -21,11 +21,25 @@
 
 #### Parallel computing architectures
 
-##### 	Shared-memory: 1 address space for all the processors
-
-
++ Shared-memory: 1 address space for all the processors
++ Distributed memory: Each CPU with a dedicated memory space
++ Hybrid: Each node is a processor with multiple processors
++ Multi-core processors
++ Many-core processors: Large number of single-core
 
 #### Parallel computing models
 ##### 	Shared-memory
+
++ Access via **PRAM**: *Parallel Random Access Memory*
++ All process can access to any position
++ All process execute the same code
++ Info via variables
+
 ##### 	Distributed-memory (s.31)
+
++ All process share the same code
++ Info via messages
+
+
+
 #### Parallel computing methodology
