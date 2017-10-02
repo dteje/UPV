@@ -1,8 +1,6 @@
 # Unit 1
 
 ### Introduction
-##### Parallel computing applications
-
 ##### Supercomputing
 + Concurrent execution of different tasks by different processing units
 + Concurrency can happen: 
