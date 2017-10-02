@@ -1,4 +1,4 @@
-# Unit 1
+# Unit 1. Introduction to Parallel Programming
 
 ## Introduction
 #### Supercomputing
@@ -35,11 +35,19 @@
 + All process execute the same code
 + Info via variables
 
-##### 	Distributed-memory (s.31)
+##### 	Distributed-memory
 
 + All process share the same code
 + Info via messages
 
-
-
 #### Parallel computing methodology
+
++ Automatic Parallelization
++ Semi-automatic Parallelization
++ Programming languages
++ Software libraries (API)
+
+
+
+# Unit 2.
+
