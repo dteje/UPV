@@ -133,7 +133,7 @@ WHERE ET.dorsal IN 	(SELECT C.dorsal
                     )
 ```
 
- ###### Example s.48
+ ###### Example s. 48
 
 ```sql
 SELECT nombre
@@ -143,6 +143,32 @@ WHERE dorsal NOT IN 	(SELECT dorsal
 ```
 
 #### 4. Universal quantification 
+
+###### Example s. 54
+
+```sql
+SELECT C.nombre
+FROM Ciclista C
+WHERE NOT EXISTS	(SELECT *
+                    FROM Maillot M
+                    WHERE NOT EXISTS	(SELECT * 
+                                         FROM Llevar L 
+                                         WHERE L.codigo = M.codigo 
+                                         AND L.dorsal = C.dorsal))
+```
+
+###### Example s. 55
+
+```sql
+SELECT C.nombre
+FROM Ciclista C, Etapa E
+WHERE C.dorsal = E.dorsal
+AND NOT EXISTS	(SELECT * FROM Puerto P WHERE NOT EXISTS)
+```
+
+
+
+
 
 
 
