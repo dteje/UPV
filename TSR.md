@@ -30,7 +30,10 @@ Similar to Java but with some differences:
     + Passed by value ()
     + Immutable
   + Compound (object)
-    + ​
+    + Passed by reference ()
+    + Can be modified
+    + Single identity: each one is unique
+    + May hold multiple elements
 
 
 
