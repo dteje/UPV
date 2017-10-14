@@ -170,6 +170,49 @@ AND NOT EXISTS	(SELECT * FROM Puerto P WHERE NOT EXISTS)
 
 
 
+### Exercises
+
+#### Ex 1. 
+
+List the name of the youngest cyclist
+
+```sql
+SELECT C.nombre
+FROM Ciclista C
+WHERE C.edad <= ALL	(SELECT edad FROM Ciclista);
+```
+
+
+
+#### Ex 2. 
+
+List the value of the attribute netapa and the departure city for those stages with no mountain passes
+
+```sql
+SELECT netapa, salida 
+FROM Etapa
+WHERE netapa NOT IN (SELECT netapa FROM puerto)
+```
+
+#### Ex 3. 
+
+List the name of the departure and the arrival of the stages where the steepest passes ("puerto") are located
+
+```sql
+SELECT salida, llegada
+FROM Etapa
+WHERE netapa = (SELECT netapa FROM Puerto WHERE pendiente = (SELECT MAX pendiente FROM Puerto));
+
+SELECT salida, llegada
+FROM Etapa E, Puero P
+WHERE E.netapa = P.netapa
+AND P.pendente >= ALL(SELECT P2.pendiente FROM Puerto P2);
+```
+
+
+
+
+
 
 
 
