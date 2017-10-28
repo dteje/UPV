@@ -211,6 +211,22 @@ AND P.pendente >= ALL(SELECT P2.pendiente FROM Puerto P2);
 
 
 
+# Preparing the exam 
+
+##### Ex 6 slide 
+
+List the name of the cyclists who belong to a team which has more than five cyclists and have also won one or more stages. Please also indicate how many stages he has won
+
+```sql
+SELECT c.nombre, 
+FROM Ciclista c, Equipo E
+WHERE c.nomeq
+GROUP BY c.nomeq
+HAVING 5 < (SELECT DISTINCT c.nombre FROM Ciclista c, Etapa e, WHERE e.dorsal = c.etapa);
+```
+
+
+
 
 
 

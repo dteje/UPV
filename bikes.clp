@@ -94,7 +94,12 @@
         point P normal
         point Q normal
         point R bike
+
         )
+
+
+
+
 
 
 (deffacts neighbourhoods
